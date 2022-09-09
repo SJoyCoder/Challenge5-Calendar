@@ -11,7 +11,13 @@ console.log(time)
 
 for (let i = 0; i < saveBtns.length; i++) {
 
-    console.log(appointment[i].getAttribute("data-time"));
+    if (appointment[i].getAttribute("data-time") === time){
+        appointment[i].style.present
+    }else if(appointment[i].getAttribute("data-time") < time){
+        appointment[i].future
+    }else if(appointment[i].getAttribute("data-time") > time){
+        appointment[i].past
+    };
 
     appointment[i].value = localStorage.getItem("appt"+i)
 
