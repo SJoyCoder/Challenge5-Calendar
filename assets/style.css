@@ -2,7 +2,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
-  margin: 0;
 }
 
 textarea{
@@ -20,6 +19,10 @@ textarea{
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+}
+
+ul {
+  list-style: none;
 }
 
 .description{
